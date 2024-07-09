@@ -1,0 +1,24 @@
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.group:hover .card-actions {
+  transform: translateY(0);
+}
+
+.animate-move-in {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.group:hover .animate-move-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}

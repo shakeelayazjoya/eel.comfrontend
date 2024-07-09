@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0;
+  }
+  body {
+    @apply font-inter;
+  }
+}
+
+.cmn_btn {
+  @apply bg-slate-800 px-8 py-2 rounded text-white;
+}
+.sm_container {
+  @apply px-20 py-14;
+}
+
+input::placeholder{
+  @apply text-sm !important;
+}

@@ -1,0 +1,78 @@
+/* Example CSS for footer styling */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: #ddd; /* Example CSS for footer styling with hover animations */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+
+  .footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    position: relative; /* Ensure relative positioning for absolute text animation */
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease; /* Smooth transitions for color change and transform */
+  }
+
+  .footer-links a:hover {
+    color: #fff; /* Change text color on hover */
+    transform: translateX(5px); /* Move text to the right slightly on hover */
+  }
+
+  .footer-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline below the text */
+    width: 100%;
+    height: 2px; /* Define underline height */
+    background-color: #fff;
+    transform: scaleX(0); /* Initially hidden underline */
+    transform-origin: bottom right; /* Scale from bottom right */
+    transition: transform 0.3s ease; /* Smooth underline animation */
+  }
+
+  .footer-links a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+    transform-origin: bottom left; /* Scale from bottom left */
+  }
+
+  .footer-links a:focus {
+    outline: none;
+  }
+
+  /* Additional styles for about us section */
+  .footer-about p {
+    margin-bottom: 10px;
+  }
+
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: orange;
+}
+
+.footer-links a:focus {
+  outline: none;
+}
+
+/* Additional styles for about us section */
+.footer-about p {
+  margin-bottom: 10px;
+}

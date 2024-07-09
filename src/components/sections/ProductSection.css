@@ -1,0 +1,12 @@
+.hover-effect {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition:
+    transform 0.9s ease,
+    opacity 0.9s ease;
+}
+
+.relative:hover .hover-effect {
+  opacity: 0.5;
+  transform: translateY(0);
+}
